@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "test-app-2"
+client_id = "7112794f01207a158045a99cf297cfe2"
+application_url = "https://asus-hz-scenarios-consolidation.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_products, write_products"
+
+[auth]
+redirect_urls = [
+  "https://asus-hz-scenarios-consolidation.trycloudflare.com/auth/callback",
+  "https://asus-hz-scenarios-consolidation.trycloudflare.com/auth/shopify/callback",
+  "https://asus-hz-scenarios-consolidation.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "development-store-12345.myshopify.com"
